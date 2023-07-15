@@ -14,6 +14,10 @@ https://github.com/Radnar9/QRreport/assets/72544337/2fdcc73c-ee6d-476e-9b00-1bc0
 
 In case anything goes wrong with the GitHub player, the video is also available on Youtube [***here***](https://youtu.be/hCPL6Q3TqVw).
 
+## API Documentation
+
+The API documentation is described [**here**](./docs/api/README.md).
+
 ### How to run the project
 
 For now the only way to test our project is to download the zip file and run the files on your own computer.
