@@ -6,33 +6,45 @@ With the great diversity and high number of devices, when a specific or more gen
     
 With these problems in mind, we have developed a system, in which all these difficulties will be **centralized**, with the objective of **reducing not only the time to report existing malfunctions**, but also the **time associated with their arrangement**, implementing an infrastructure for the reporting of problems in buildings and their distribution by employees qualified to solve the problems encountered, **making this whole process much faster for everyone involved**. The system is composed of a database handled through an API server, which receives requests via HTTP from client applications.
     
-The **entry point** to start the report of a malfunction is through a `QR Code`, which will be near a reportable device and will redirect the mobile device to a form in order to submit the detected malfunction.
+The **entry point** to start the report of a malfunction is through a `QR Code`, which will be located near a reportable device and will redirect the mobile device to a form in order to submit the detected malfunction.
 
-## How to run the project
+## Demonstration
 
-For now the only way to test our project is to download the zip file and run the files in your own computer.
+https://github.com/Radnar9/QRreport/assets/72544337/2fdcc73c-ee6d-476e-9b00-1bc0eacee4e0
+
+In case anything goes wrong with the GitHub player, the video is also available on Youtube [***here***](https://youtu.be/hCPL6Q3TqVw).
+
+### How to run the project
+
+For now the only way to test our project is to download the zip file and run the files on your own computer.
 
 #### Backend
-To run the backend files, i.e. the API server and PostgreSQL database you need to perform the following steps:
+To run the backend files, i.e. the API server and PostgreSQL database, you need to perform the following steps:
 
 ##### PostgreSQL Database
-To set up the database, you need to create two databases, available on the **port 5432**, one called `production` and another called `test` for execution of the tests in the server API. And then you need to execute the SQL scripts **create_tables** and all the **functionalities scripts** that are inside the functionalities folder. If you want some data inside the database run the script **isel_study_case_data**.
+To set up the database, you need to create two databases, available on the **port 5432**, one called `production` and another called `test` for execution of the tests in the server API. And then you need to execute the SQL scripts *create_tables* and all the *functionalities scripts* that are inside the functionalities folder. If you want some data inside the database run the script *isel_study_case_data*.
 
-An easier approach would be to execute the **Docker Compose** file that is on the path `code/docker`, to execute it run the following command: 
-* **docker-compose up -d**
+An easier approach would be to execute the **Docker Compose** file located in the path `code/docker`. To execute it, run the following command: 
+```bash
+docker-compose up -d
+```
 
-Don't forget to set the environment variables of the database with the keys: **DB_QRREPORT_USER**, with the user name used in the database and the key **DB_QRREPORT_PASSWORD**, with the database password. If you wish you can change these values defined in the docker compose file, otherwise you must use the values that are described in the file.
+Don't forget to set the environment variables of the database with the keys: `DB_QRREPORT_USER` (with the username used in the database) and `DB_QRREPORT_PASSWORD` (with the database password). If you wish you can change these values defined in the docker compose file, otherwise you must use the values that are described in the file.
 
 ##### API Server
-In the root of the jvm project execute the commands:
-* **./gradlew build**
-* **java -jar -cp build/libs project-0.0.1-SNAPSHOT.jar**
+In the root of the jvm directory, execute the commands below to run the server:
+```bash
+./gradlew build
+java -jar -cp build/libs project-0.0.1-SNAPSHOT.jar
+```
 
-Or just run it in the IntelliJ IDEA or in a similar IDE.
+Alternatively, you can run it in IntelliJ IDEA or a similar IDE.
 
 #### Frontend
-In case of the frontend code, developed with React, to run it in the root of the project, you must execute the following commands:
-* **npm install**
-* **npm start**
+To run the frontend code developed with React, go to the root of the project and execute the following commands:
+```bash
+npm install
+npm start
+```
 
-(Make sure you have the NPM installed in your computer)
+*(Make sure you have the NPM installed on your computer)*
