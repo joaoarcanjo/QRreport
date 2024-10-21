@@ -1,4 +1,4 @@
-# QRreport
+# QRreport 2022
 
 Nowadays, offices, services and education infrastructures have more and more points of common use, and in these places there are more and more devices, such as taps, flushing systems, switches, doors, among many others.
     
