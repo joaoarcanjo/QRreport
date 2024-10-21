@@ -1,6 +1,6 @@
 # QRreport
 
-Nowadays, offices, services and education infrastructures have more and more points of common use, and in these places there are more and more devices, such as taps, flushing systems, switches, doors, among many others. 
+Nowadays, offices, services and education infrastructures have more and more points of common use, and in these places there are more and more devices, such as taps, flushing systems, switches, doors, among many others.
     
 With the great diversity and high number of devices, when a specific or more general device breaks down or is inoperable, such as an electrical problem, the procedure to report it is not only very laborious and time expensive, but also very confusing, because, usually, a person never knows the procedure to report the problem, from whom to talk about it, to the place to report the anomaly detected. When already knows what to do, eventually, it will be necessary to describe on a paper or in an e-mail the localization, the device and the anomaly, without knowing afterwards if the repair is already done.
     
